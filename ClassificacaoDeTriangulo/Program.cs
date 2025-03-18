@@ -1,4 +1,6 @@
-﻿namespace ClassificacaoDeTriangulo
+﻿using System.ComponentModel.Design;
+
+namespace ClassificacaoDeTriangulo
 {
     internal class Program
     {
@@ -36,7 +38,22 @@
                     ladoY + ladoZ > ladoX;
 
                 if (medidasTrianguloValidas == true)
+                {
                     Console.WriteLine("O triãngulo é válido!");
+
+                    string tipoTriangulo = "Não classificado";
+
+                    if (ladoX == ladoY && ladoY == ladoZ)
+                        tipoTriangulo = "Equilátero";
+
+                    else if (ladoX != ladoY && ladoY != ladoZ && ladoX != ladoZ)
+                        tipoTriangulo = "Escaleno";
+
+                    else
+                        tipoTriangulo = "Isósceles";
+
+                    Console.WriteLine($"O triãngulo é {tipoTriangulo} ");
+                }
                 else
                     Console.WriteLine("Os valores informados não formam um triãngulo válido");
 
