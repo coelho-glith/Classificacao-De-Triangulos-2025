@@ -15,11 +15,11 @@ Sistema que Calcula qual o tipo de triãngulo so pelo os valores informados de c
 ---
 ## Clone o Repositório
 ```
-git clone https://github.com/coelho-glith/Classificacao-De-Triangulos-2025
+git clone https://github.com/coelho-glith/JogoDaForca-2025
 ```
 ## Navegue até a pasta raiz da solução
 ```
-cd ClassificacaoDeTriangulo
+cd JogoDaForca
 ```
 ## Restaure as dependências
 ```
@@ -27,7 +27,13 @@ dotnet restore
 ```
 ## Navegue até a pasta do projeto
 ```
-cd ClassificacaoDeTriangulo.ConsoleApp
+cd JogoDaForca.ConsoleApp
 ```
 ## Execute o projeto
 ```
+dotnet run
+```
+
+## Requisitos
+---
+- .NET SDK (recomendado .NET 8.0 ou superior) para compilação e execução do projeto.
